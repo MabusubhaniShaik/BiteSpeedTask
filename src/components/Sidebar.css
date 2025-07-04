@@ -1,0 +1,10 @@
+.sidebar {
+  width: 18.75rem;
+  height: 12.5rem;
+  padding: 1.25rem;
+  border-left: 0.0625rem solid #eaeaea;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,198 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 0.0625rem solid #000000;
+  gap: 0.5rem;
+}
+
+.save-button,
+.reset-button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.save-button:hover,
+.reset-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.reset-button:disabled,
+.save-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.error-message {
+  background-color: #ffffff;
+  color: #ff0000;
+  padding: 0.625rem;
+  text-align: center;
+  border: 0.0625rem solid #000000;
+}
+
+.success-message {
+  background-color: #e6ffe6;
+  color: #2e7d32;
+  border: 0.0625rem solid #a5d6a7;
+  padding: 0.625rem;
+  margin: 0.625rem 1.25rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.sidebar {
+  padding: 1.25rem;
+  border-left: 0.0625rem solid #000000;
+  width: 15.625rem;
+  background-color: #ffffff;
+}
+
+.input-field {
+  width: 100%;
+  margin-bottom: 0.625rem;
+  padding: 0.375rem;
+  border: 0.0625rem solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.add-button {
+  width: 100%;
+  padding: 0.5rem;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.settings-panel {
+  padding: 1.25rem;
+  border-left: 0.0625rem solid #000000;
+  width: 15.625rem;
+  background-color: #ffffff;
+}
+
+.text-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.0625rem solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  margin-top: 0.625rem;
+}
+
+.back-button {
+  margin-top: 0.625rem;
+  padding: 0.5rem;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.reactflow-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.text-node {
+  padding: 0.625rem;
+  border: 0.0625rem solid #000000;
+  border-radius: 0;
+  background: #ffffff;
+  color: #000000;
+  text-align: center;
+  width: 12.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-node .react-flow__handle {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #000000;
+  border: none;
+  border-radius: 50%;
+}
+.header {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 0.0625rem solid #000000;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
